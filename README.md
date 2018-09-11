@@ -48,8 +48,8 @@ go to C:\ProgramData\MySQL\MySQL Server 5.7\my.ini, search for secure-file-priv,
 
 
 
-![Alt text](nextgate-music/screenshots/homePage.jpg)
+![Alt text](https://github.com/tang68/nextgate-music/blob/master/screenshots/homePage.jpg)
 
-![Alt text](nextgate-music/screenshots/loginPage.jpg)
+![Alt text](https://github.com/tang68/nextgate-music/blob/master/screenshots/loginPage.jpg)
 
-![Alt text](nextgate-music/screenshots/searchResultsPage.jpg)
+![Alt text](https://github.com/tang68/nextgate-music/blob/master/screenshots/searchResultsPage.jpg)
