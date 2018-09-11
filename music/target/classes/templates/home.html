@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>NextGate Music</title>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+  body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 2;
+      background-color: #1abc9c; /* Green */
+  }
+  .container-fluid {
+      padding-top: 90px;
+  }
+  </style>
+</head>
+
+<body>
+	<div class="container-fluid text-center">
+	  <h1 class="margin">Welcome to NextGate Music</h1>
+	  <h3>Login to search our awesome collection of singers and albums</h3><br>
+	  <button type="button" class="btn btn-secondary btn-lg" id="myButton" onclick="login(this)">Login</button>
+	</div>
+
+    <script>
+    function login(id) {
+       location.href = "http://localhost:8080/login";
+    }
+    </script>
+</body>
+</html>

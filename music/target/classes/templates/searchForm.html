@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+   <head>
+      <title>NextGate Music</title>
+      <meta charset="utf-8">
+	  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+      <style>
+		th, td { padding: 5px; }
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+      		line-height: 2;
+      		background-color: #1abc9c; /* Green */
+      	}
+      	
+      	input[type=text] {
+		    width: 50%;
+		    padding: 12px 20px;
+		    margin: 8px 0;
+		}
+		
+		.container-fluid {
+		    padding-top: 40px;
+		}
+		
+		.header {
+			font-size: large;
+		}
+		
+		.rows{
+			font-size: medium;
+		}
+	  </style>
+   </head>
+   
+   <body>
+
+      <form method='POST' class="text-center container-fluid">
+      	 <input type="text" placeholder="Enter Singer or Album" name="searchKey" required><br>
+
+		 <button class="btn btn-secondary btn-lg text-center" name="submit" type="submit">Search</button>
+      </form><br>
+      
+      <div th:if="${#lists.isEmpty(musicdata)}" class="text-center">
+      		<h4>No records found</h4>
+      </div>
+      
+      <div th:if="${not #lists.isEmpty(musicdata)}">
+	    <table class="table">
+	    	<thead class="thead-dark header">
+		        <tr>
+		            <th scope="col">Singer</th>
+		            <th scope="col">DOB</th>
+		            <th scope="col">Sex</th>
+		            <th scope="col">Album</th>
+		            <th scope="col">Release Year</th>
+		            <th scope="col">Record Company</th>
+		        </tr>
+	        </thead>
+	        <tbody>
+				<tr th:each="item : ${musicdata}" class="rows">
+		 			<td th:text="${item.singer}"></td>
+		            <td th:text="${item.dob}"></td>
+		            <td th:text="${item.sex}"></td>
+		            <td th:text="${item.album}"></td>
+		            <td th:text="${item.year}"></td>
+		            <td th:text="${item.company}"></td>
+		        </tr>
+	        </tbody>
+	    </table>
+	  </div>
+      
+   </body>
+   
+</html>
