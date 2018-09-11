@@ -1,7 +1,7 @@
 OVERVIEW
 This project is a demo for a full-stack Maven web application using Spring Boot, MySQL, Thymeleaf template engine
 
-The final product includes: (see screenshots)
+The final product includes: (see screenshots below)
 	A welcome page
 	A login page where users have to provide credentials (stored in mysql database) to proceed
 	A search page where users can search for singer or album (stored in mysql database)
@@ -48,3 +48,8 @@ go to C:\ProgramData\MySQL\MySQL Server 5.7\my.ini, search for secure-file-priv,
 
 
 
+![Alt text](nextgate-music/screenshots/homePage.jpg)
+
+![Alt text](nextgate-music/screenshots/loginPage.jpg)
+
+![Alt text](nextgate-music/screenshots/searchResultsPage.jpg)
