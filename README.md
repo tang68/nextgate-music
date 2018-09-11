@@ -2,9 +2,10 @@ OVERVIEW
 This project is a demo for a full-stack Maven web application using Spring Boot, MySQL, Thymeleaf template engine
 
 The final product includes: (see screenshots below)
-	A welcome page
-	A login page where users have to provide credentials (stored in mysql database) to proceed
-	A search page where users can search for singer or album (stored in mysql database)
+1. A welcome page
+2. A login page where users have to provide credentials (stored in mysql database) to proceed
+3. A search page where users can search for singer or album (stored in mysql database)
+
 ---------------------------------------------------------------------------------------
 
 ENVIROMENT SETUP
